@@ -10,7 +10,6 @@
       body {
         font-family: 'Prompt', sans-serif;
         background-image: url("image1.JPG");
-        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
         color: white;
@@ -23,9 +22,18 @@
       }
       
       @media only screen and (max-width: 768px) {
-        /* Adjust the max-width value to your desired breakpoint */
+        /* Mobile devices */
         body {
           background-size: 100% auto;
+        }
+      }
+      
+      @media only screen and (min-width: 769px) {
+        /* Desktop devices */
+        body {
+          background-size: cover;
+          background-size: 100%;
+          background-size: 100vw 100vh;
         }
       }
     </style>
