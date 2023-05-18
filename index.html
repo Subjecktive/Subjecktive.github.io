@@ -11,7 +11,8 @@
         font-family: 'Prompt', sans-serif;
         background-image: url("image1.JPG");
         background-size: cover;
-        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
         color: white;
       }
       h1 {
@@ -19,6 +20,13 @@
       }
       .soundcloud {
         text-align: center;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        /* Adjust the max-width value to your desired breakpoint */
+        body {
+          background-size: 100% auto;
+        }
       }
     </style>
   </head>
